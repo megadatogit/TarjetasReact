@@ -3,7 +3,8 @@
 .TrjSocialMedia,
 .TrjTimePlaning,
 .TrjObjetive,
-.TrjProcess {
+.TrjProcess,
+.TrjResults {
   --card-width: 1189px;
   --card-height: 678px;
   --card-radius: 12px;
@@ -542,4 +543,100 @@
   width: 80%;
   margin-bottom: 42px;
   text-align: justify;
+}
+
+
+/* Tarjeta Results */
+
+.TrjResults {
+  display: flex;
+  flex-direction: column;
+}
+.rsarriba {
+  margin-top: 60px;
+  display: flex;
+}
+.rsizquierda {
+  width: 364px;
+  margin-left: 54px;
+  margin-right: 38px;
+  text-align: left;
+}
+
+.rsol {
+  width: 609px;
+  border-top: 1px solid;
+  width: 609px;
+  list-style-type: decimal;
+  padding-left: 20px;
+  &>:nth-child(2) {
+    transform: translateY(-32px);
+  }
+}
+
+.rscnt {
+  display: flex;
+  
+}
+.rsli {
+  color: black;
+  font-size: 3rem;
+  font-family: var(--font-serif);
+  line-height: 0;
+  margin-left: 3rem;
+  padding: 0;
+  /* border: 1px dashed red; */
+}
+.rslogro {
+  font-weight: normal;
+  text-align: left;
+}
+.rscntValor {
+  display: flex;
+  width: 210px;
+  align-items: center;
+  gap: 1rem;
+}
+.rslabelValor {
+  flex: 1 ;
+  text-align: right;
+  line-height: 0;
+  font-size: 16px;
+  color: darkgray;
+  font-family: var(--heading);
+}
+.rsvalor, 
+.rslogro,
+.rstitulo {
+  font-size: 3rem;
+  flex: 1 ;
+  font-family: var(--font-serif);
+  line-height: 0;
+  color: black;
+}
+
+.rstitulo {
+  font-weight: normal;
+  line-height: 1;
+}
+
+.rsabajo {
+  width: 1087px;
+  margin: 0 auto;
+}
+.rscabeza {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  line-height: 0;
+}
+.rsgrafica {
+  /* border: 1px dashed red; */
+  transform: translateY(-3rem);
+  margin: 0 auto;
+  width: 1093px;
+}
+
+.AxisX {
+  z-index: 1;
 }

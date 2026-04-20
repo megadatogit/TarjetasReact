@@ -157,3 +157,17 @@ export const TarjetaProcess = {
   ]
 
 }
+
+/* tarjeta Results */
+
+export const TarjetaResults = {
+  titulo:"Results",
+  logros: [
+    {logro: "Growth", labelValor:"porcentaje", valor: "30%"},
+    {logro: "Exposure", labelValor:"likes", valor: "90k"}
+  ],
+  descripcion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem quae voluptate non illo dicta blanditiis aspernatur nihil incidunt earum, consectetur deserunt.",
+  label:"+ lorem",
+  tolp:"Lorem ipsim dor sit",
+  xAxis:["Enero","Febrero","Marzo","Abril"]
+}

@@ -7,8 +7,8 @@ const Semanas = ({ semanas }) => {
   const lasSemanas = Array.from({ length: semanas }, (_, i) => i + 1);
   return (
     <>
-      {lasSemanas.map((item) => (
-        <p className={styles.semana} key={item}>{item} weeks </p>
+      {lasSemanas.map((item, i) => (
+        <p className={styles.semana} key={i}>{item} weeks </p>
       ))}
     </>
   )
