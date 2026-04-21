@@ -169,5 +169,15 @@ export const TarjetaResults = {
   descripcion:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem quae voluptate non illo dicta blanditiis aspernatur nihil incidunt earum, consectetur deserunt.",
   label:"+ lorem",
   tolp:"Lorem ipsim dor sit",
-  xAxis:["Enero","Febrero","Marzo","Abril"]
+  xAxis:["Enero","Febrero","Marzo","Abril", "Mayo"]
+}
+
+export const TarjetaMission = {
+  titulo:"Mission",
+  descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quos vitae natus culpa quo officia in eius sequi deleniti quisquam quaerat commodi reiciendis, corporis sit! Ratione molestias facilis fugit placeat.",
+  metas:[
+    {meta:"Focusing Problems", bg:"#B0AFAF"},
+    {meta:"Optimizing", bg:"#D3D2CE"},
+    {meta:"Growth Business", bg:"#F0EEE8"},
+  ],
 }

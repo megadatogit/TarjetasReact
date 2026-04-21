@@ -33,8 +33,9 @@ const Barras = ({ barra, i }) => {
 }
 
 
+
 //COMPONENTE TARJETA TIME PLANING
-const TrjTimePlaning = ({ titulo, barras }) => {
+const TrjTimePlaning = ({ titulo, barras,}) => {
   //generamos la cantidad de semanas
   return (
     <div className={styles.TrjTimePlaning}>
@@ -50,6 +51,7 @@ const TrjTimePlaning = ({ titulo, barras }) => {
           />
         ))}
       </div>
+      
     </div>
   )
 }

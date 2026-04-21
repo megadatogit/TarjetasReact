@@ -4,12 +4,14 @@ import TrjTimePlaning from "./components/TrjTimePlaning";
 import TrjObjetive from "./components/TrjObjetive";
 import TrjProcess from "./components/TrjProcess";
 import TrjResults from "./components/TrjResults";
+import TrjMission from "./components/TrjMission";
 import { 
   TarjetaAnalisis, 
   TarjetaSocialMedia, 
   TarjetaTimePlaning, TarjetaObjective, 
   TarjetaProcess,
-  TarjetaResults 
+  TarjetaResults,
+  TarjetaMission, 
 } from './components/textos';
 import './App.css'
 
@@ -25,6 +27,7 @@ function App() {
       <TrjObjetive {...TarjetaObjective}/>
       <TrjProcess {...TarjetaProcess}  />
       <TrjResults {...TarjetaResults} />
+      <TrjMission {...TarjetaMission} />
 
     </div>
   )

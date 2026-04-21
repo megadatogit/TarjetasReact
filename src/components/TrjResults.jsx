@@ -52,13 +52,17 @@ const Grafica = ({ tolp,}) => {
         cy="60"
         r="4.5"
       />
-
-     
     </svg>
-
-
   )
 }
+
+// pinta los labels en Xaxis
+const LabelsX =({item}) => {
+  return(
+    <p className={styles.labelX}>{item}</p>
+  )
+}
+
 
 
 const TrjResults = ({ titulo, descripcion, logros, label, tolp, xAxis  }) => {
@@ -67,7 +71,7 @@ const TrjResults = ({ titulo, descripcion, logros, label, tolp, xAxis  }) => {
       <div className={styles.rsarriba}>
         <div className={styles.rsizquierda}>
           <h3 className={styles.rstitulo}>{titulo}</h3>
-          <p className={styles.rsrsdescripcion}>{descripcion}</p>
+          <p className={styles.rsdescripcion}>{descripcion}</p>
         </div>
         <ol className={styles.rsol}>
           {logros.map((lgitem, i) => (
@@ -85,8 +89,15 @@ const TrjResults = ({ titulo, descripcion, logros, label, tolp, xAxis  }) => {
         <Grafica
           label={label}
           tolp={tolp}
-          xAxia={xAxis}
         />
+      <div className={styles.xAxis}>
+        {xAxis.map((item, i) => 
+          (<LabelsX
+          key={i} 
+          item={item}
+          />)
+        )}
+      </div>
       </div>
       
 
